@@ -127,7 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AnalisisAves.cpp" />
+    <ClCompile Include="Bitacora.cpp" />
+    <ClCompile Include="NodoAve.cpp" />
     <ClCompile Include="RegistroAves.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnalisisAves.h" />
+    <ClInclude Include="Bitacora.h" />
+    <ClInclude Include="NodoAve.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

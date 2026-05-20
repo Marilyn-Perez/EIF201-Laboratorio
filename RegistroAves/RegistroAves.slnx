@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="RegistroAves.vcxproj" />
+  <Project Path="RegistroAves.vcxproj" Id="e8df7ea8-8cf1-40da-98a2-5c4547b186a6" />
 </Solution>
