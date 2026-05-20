@@ -5,6 +5,7 @@
 using namespace EIF201;
 
 int main() {
+
     NodoAve* lista = nullptr;
 
     Bitacora bitacora("datos/anillamientos.txt");
@@ -18,3 +19,36 @@ int main() {
     std::cout << "Lineas descartadas: " << bitacora.getDescartadas() << std::endl;
 
     AnalisisAves analisis;
+
+    std::cout << "\n--- Lista cronologica ---" << std::endl;
+    analisis.imprimirCronologico(lista);
+
+    std::cout << "\nTotal de aves: " << analisis.contar(lista) << std::endl;
+    std::cout << "Peso acumulado: " << analisis.sumaPesos(lista) << " gramos" << std::endl;
+
+    std::cout << "Garzas Tigre registradas: "
+        << analisis.contarEspecie(lista, "Garza Tigre") << std::endl;
+
+    if (analisis.existeEspecie(lista, "Garza Tigre")) {
+        std::cout << "Si existe la especie Garza Tigre." << std::endl;
+    }
+    else {
+        std::cout << "No existe la especie Garza Tigre." << std::endl;
+    }
+
+    NodoAve* pesada = analisis.aveMasPesada(lista);
+
+    if (pesada != nullptr) {
+        std::cout << "\nAve mas pesada: "
+            << pesada->anillo << " | "
+            << pesada->especie << " | "
+            << pesada->peso << "g" << std::endl;
+    }
+
+    std::cout << "\n--- Lista inversa ---" << std::endl;
+    analisis.imprimirInverso(lista);
+
+    Bitacora::liberarLista(lista);
+
+    return 0;
+}

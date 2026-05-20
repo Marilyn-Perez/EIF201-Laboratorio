@@ -1,0 +1,4 @@
+TS-0427;Garza Tigre;850.5;H;2026-05-20
+TS-0428;Ibis Blanco;600.2;M;2026-05-20
+TS-0427;Garza Tigre;850.5;H;2026-05-20
+TS-0428;Ibis Blanco;600.2;M;2026-05-20
